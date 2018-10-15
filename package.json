@@ -1,0 +1,16 @@
+{
+  "name": "agora-pfsp",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "author": "Fati CHEN <chen@lirmm.fr>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.116",
+    "agora-algorithm": "git+ssh://git@gite.lirmm.fr:chen/agora-algorithm.git",
+    "agora-graph": "git+ssh://git@gite.lirmm.fr:chen/agora-graph.git",
+    "lodash": "^4.17.11"
+  }
+}
