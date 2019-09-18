@@ -15,7 +15,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var lodash_1 = __importDefault(require("lodash"));
 var agora_graph_1 = require("agora-graph");
-exports.default = pfsPrime;
 /**
  * Executes the Push Force Scan' (PFS') algorithm on this graph
  *
@@ -23,7 +22,7 @@ exports.default = pfsPrime;
  * @param {object} [options] options
  * @param {number} options.padding padding to add between nodes
  */
-function pfsPrime(graph, options) {
+exports.pfsPrime = agora_graph_1.createFunction(function (graph, options) {
     // TODO: add padding
     if (options === void 0) { options = { padding: 0 }; }
     lodash_1.default.forEach(graph.nodes, function (n) {
@@ -44,8 +43,12 @@ function pfsPrime(graph, options) {
         delete n.up;
     });
     return { graph: graph };
-}
-exports.pfsPrime = pfsPrime;
+});
+exports.PFSPAlgorithm = {
+    name: "PFS'",
+    algorithm: exports.pfsPrime
+};
+exports.default = exports.PFSPAlgorithm;
 /**
  *
  * @param {Array.<Node>} nodes list of nodes
@@ -188,11 +191,11 @@ function force(vi, vj) {
     var gij = δy / δx;
     var Gij = (vi.height + vj.height) / (vi.width + vj.width);
     if ((Gij >= gij && gij > 0) || (-Gij <= gij && gij < 0) || gij === 0) {
-        f.x = δx / aδx * ((vi.width + vj.width) / 2 - aδx);
+        f.x = (δx / aδx) * ((vi.width + vj.width) / 2 - aδx);
         f.y = f.x * gij;
     }
     if ((Gij < gij && gij > 0) || (-Gij > gij && gij < 0)) {
-        f.y = δy / aδy * ((vi.height + vj.height) / 2 - aδy);
+        f.y = (δy / aδy) * ((vi.height + vj.height) / 2 - aδy);
         f.x = f.y / gij;
     }
     return f;

@@ -1,6 +1,4 @@
-import { Graph } from 'agora-graph';
-import { Result } from 'agora-algorithm';
-export default pfsPrime;
+import { Algorithm } from 'agora-graph';
 /**
  * Executes the Push Force Scan' (PFS') algorithm on this graph
  *
@@ -8,4 +6,10 @@ export default pfsPrime;
  * @param {object} [options] options
  * @param {number} options.padding padding to add between nodes
  */
-export declare function pfsPrime(graph: Graph, options?: object): Result;
+export declare const pfsPrime: import("agora-graph").Function<{
+    padding: number;
+}>;
+export declare const PFSPAlgorithm: Algorithm<{
+    padding: number;
+}>;
+export default PFSPAlgorithm;
