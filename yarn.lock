@@ -10,25 +10,30 @@
   version "4.14.117"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.117.tgz#695a7f514182771a1e0f4345d189052ee33c8778"
 
-"agora-algorithm@git+ssh://git@gite.lirmm.fr:chen/agora-algorithm.git":
-  version "0.1.0"
-  resolved "git+ssh://git@gite.lirmm.fr:chen/agora-algorithm.git#e0a5d07e2f944e57242d6b57fd0c76f22509928d"
-  dependencies:
-    agora-graph "git+ssh://git@gite.lirmm.fr:chen/agora-graph.git"
+"@types/lodash@^4.14.138":
+  version "4.14.138"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.138.tgz#34f52640d7358230308344e579c15b378d91989e"
+  integrity sha512-A4uJgHz4hakwNBdHNPdxOTkYmXNgmUAKLbXZ7PKGslgeV0Mb8P3BlbYfPovExek1qnod4pDfRbxuzcVs3dlFLg==
 
-"agora-graph@git+ssh://git@gite.lirmm.fr:chen/agora-graph.git":
-  version "0.0.0"
-  resolved "git+ssh://git@gite.lirmm.fr:chen/agora-graph.git#bf5f5be2a725c486e3e35074ad4da1edf257feae"
+"agora-graph@https://github.com/agorajs/agora-graph.git#semver:1.1.1":
+  version "1.1.1"
+  resolved "https://github.com/agorajs/agora-graph.git#cb14251994a5f810fa79369a226d39eecdf6b61d"
   dependencies:
     "@types/delaunator" "^2.0.0"
     "@types/lodash" "^4.14.116"
     delaunator "^3.0.2"
-    lodash "^4.17.11"
+    lodash "4.17.15"
 
 delaunator@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/delaunator/-/delaunator-3.0.2.tgz#62d5d9699cd64a736a2bb9c4d957d662452808d0"
 
-lodash@^4.17.11:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
+lodash@4.17.15, lodash@^4.17.15:
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+
+typescript@^3.6.3:
+  version "3.6.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.3.tgz#fea942fabb20f7e1ca7164ff626f1a9f3f70b4da"
+  integrity sha512-N7bceJL1CtRQ2RiG0AQME13ksR7DiuQh/QehubYcghzv20tnh+MQnQIuJddTmsbqYj+dztchykemz0zFzlvdQw==

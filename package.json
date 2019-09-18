@@ -2,15 +2,17 @@
   "name": "agora-pfsp",
   "version": "0.1.0",
   "main": "dist/index.js",
-  "author": "Fati CHEN <chen@lirmm.fr>",
+  "author": "Fati CHEN <fati.chen@lirmm.fr>",
   "license": "MIT",
   "scripts": {
     "build": "tsc"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.116",
-    "agora-algorithm": "git+ssh://git@gite.lirmm.fr:chen/agora-algorithm.git",
-    "agora-graph": "git+ssh://git@gite.lirmm.fr:chen/agora-graph.git",
-    "lodash": "^4.17.11"
+    "@types/lodash": "^4.14.138",
+    "agora-graph": "https://github.com/agorajs/agora-graph.git#semver:1.1.1",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "typescript": "^3.6.3"
   }
 }
