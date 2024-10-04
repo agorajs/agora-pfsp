@@ -1,0 +1,73 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "type": "SoftwareSourceCode",
+  "applicationCategory": "Computer Science",
+  "author": [
+    {
+      "id": "https://orcid.org/0000-0002-9203-4229",
+      "type": "Person",
+      "affiliation": {
+        "type": "Organization",
+        "name": "LIRMM, Univerrsité de Montpellier, CNRS, Montpellier, France"
+      },
+      "email": "chen.fati@gmail.com",
+      "familyName": "Chen",
+      "givenName": "Fati"
+    },
+    {
+      "id": "_:author_2",
+      "type": "Person",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Groupe AMIS, Université Paul-Valéry Montpellier 3, Montpellier, France"
+      },
+      "email": "laurent.piccinini@univ-montp3.fr",
+      "familyName": "Piccinini",
+      "givenName": "Laurent"
+    },
+    {
+      "id": "https://orcid.org/0000-0002-8277-3490",
+      "type": "Person",
+      "affiliation": {
+        "type": "Organization",
+        "name": "LIRMM, Université de Montpellier, CNRS, Montpellier, France"
+      },
+      "email": "pascal.poncelet@lirmm.fr",
+      "familyName": "Poncelet",
+      "givenName": "Pascal"
+    },
+    {
+      "id": "https://orcid.org/0000-0001-7068-176X",
+      "type": "Person",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Groupe AMIS, Université Paul-Valéry Montpellier 3, Montpellier, France"
+      },
+      "email": "arnaud.sallaberry@lirmm.fr",
+      "familyName": "Sallaberry",
+      "givenName": "Arnaud"
+    }
+  ],
+  "codeRepository": "git+https://github.com/agorajs/agora-pfsp.git",
+  "dateCreated": "2019-09-12",
+  "dateModified": "2023-01-06",
+  "datePublished": "2019-09-18",
+  "description": "Implementation for Agorajs of the Push Force Scan' (PFS') algorithm.\n\nHAYASHI, Kunihiko, INOUE, Michiko, MASUZAWA, Toshimitsu, et al.\nA layout adjustment problem for disjoint rectangles preserving orthogonal order.  \nIn : International Symposium on Graph Drawing.\nSpringer, Berlin, Heidelberg, 1998.\np. 183-197.\nhttps://doi.org/10.1007/3-540-37623-2_14",
+  "downloadUrl": "https://github.com/agorajs/agora-pfsp/archive/refs/tags/0.3.1.tar.gz",
+  "funder": {
+    "type": "Organization",
+    "name": "Agence nationale de la recherche, France"
+  },
+  "isPartOf": "https://agorajs.github.io/",
+  "keywords": ["Graph drawing", "Layout adjustment", "Node overlap removal"],
+  "license": "https://spdx.org/licenses/MIT",
+  "name": "agorajs: implementation of the Push Force Scan' (PFS') algorithm",
+  "programmingLanguage": ["javascript", "typescript"],
+  "runtimePlatform": ["browser", "node"],
+  "version": "0.3.1",
+  "developmentStatus": "inactive",
+  "funding": "ANR-17-CE38-0013",
+  "isSourceCodeOf": "agorajs",
+  "issueTracker": "https://github.com/agorajs/agora-pfsp/issues",
+  "referencePublication": "https://dx.doi.org/10.7155/jgaa.00532"
+}
